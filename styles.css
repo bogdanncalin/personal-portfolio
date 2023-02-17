@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+:root{
+    --top-bot-section-padding: 2rem;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+a{
+    color: black;
+}
+
+.footer > a{
+    text-decoration: underline;
+}
+
+.footer > a:hover{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+html{
+    font-size: 1rem;
+    font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+    max-width: 100vw;
+    line-height: 1.15;
+    overflow-x: hidden;
+}
+
+body > :nth-child(odd){
+    background-color: rgba(149, 157, 165, 0.2);
+}
+
+body > :nth-child(even){
+    background-color:#f9f9f9;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    padding: 0;
+    min-height: max-content;
+    background-color: #000000;
+    background-image: url(images/hero-picture.jpg);
+    background-size: cover;
+    background-position: top;
+    color: #0a0913;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3)
+}
+
+.section{
+    padding: 1rem;
+}
+
+.hero-section{
+    max-width: 40vw;
+    padding-top: 20%;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 2.75rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.links{
+    padding-top: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    user-select: none;
+}
+
+.link:hover{
+    cursor: pointer;
+    user-select: none;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project{
+    padding-bottom: 1rem;;
+}
+
+.technologies{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.technologies > * > *{
+    max-height: 4rem;
+}
+
+
+.text{
+    padding-top: 1rem;
+    text-align: center;
+}
+
+button:hover{
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+
+button:active{
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+
+button{
+    all: unset;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+}
+
+.buttons{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cycle > * > .title {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+
+.years{
+    user-select: none;
+    opacity: 0.8;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.years > .line{
+    border-top: 1px solid rgb(78, 78, 78);
+    flex-grow: 1;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.cycle{
+    margin-bottom: 3rem;
+}
+
+.title.sub{
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.cv > .title.sub {
+    padding-bottom: 0;
+    padding-top: 1rem;
+}
+
+.contact-me > .links{
+    justify-content: center;
+}
+
+
+.footer{
+    user-select: none;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.cv > * > img{
+    max-width: 600px;
+}
+
+.cv{
+    text-align: center;
+}
+
+
+@media (min-width: 600px){
+    .years{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .years > .ending{
+        justify-self: flex-start;
+    }
+    
+    .years > .starting{
+        justify-self: flex-end;
+    }
+
+    .cycle > .description {
+        padding: 1rem;
+        flex-grow: 1;
+    }
+        
+    .years > .line{
+        border-left: 1px solid rgb(78, 78, 78);
+        border-top: 0;
+        margin-right: 0;
+        margin-left: 50%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        flex-grow: 1;
+    }
+
+    .cycle{
+        display: flex;
+        margin: 1rem;
+    }
+
+    .hero-section{
+        padding-left: 3rem;
+    }
+
+    .description{
+        padding: 1rem 20%;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media(min-width: 1024px){
+
+    .section{
+        padding: var(--top-bot-section-padding) 25%;
+    }
+
+    .hero-section{
+        padding-left: 10%;
+        padding-bottom: 10%;
+    }
+    h2{
+        font-size: 2rem;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+}
