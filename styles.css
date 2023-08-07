@@ -21,6 +21,10 @@ a{
     color: black;
 }
 
+.content{
+    text-align: center;
+}
+
 .footer > a{
     text-decoration: underline;
 }
